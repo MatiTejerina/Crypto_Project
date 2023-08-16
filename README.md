@@ -24,7 +24,6 @@ El análisis y la exploración de datos desempeñan un papel crucial en la obten
 
 ### **Rol a desarrollar**
 
-Te sitúas en el puesto de Analista de Datos en una empresa de servicios financieros que se ha interesado en el mercado de criptomonedas debido a su crecimiento exponencial y el potencial de oportunidades de inversión para los clientes. La empresa te ha asignado la tarea de realizar un análisis exhaustivo utilizando datos de la API CoinGecko para entender mejor el mercado de criptomonedas y presentar tus hallazgos y recomendaciones en un informe detallado.
 A traves de las API de Coingecko y Binance se crearan datasets de temporalidad de 1 dia de las 10 criptomonedas que mayor capitalizacion de mercado registran actualmente. Se excluirán de esa lista las monedas que no existian antes del 2019 por motivos de muestreo y a las stablecoins ya que no presentan volatilidad y su analisis se acota demasiado.
 Una vez obtenidos los dataframes de partida se unira a traves de una funcion merge un dato proveniente del perfil de volumen de cada intervalo de 1 dia y se realizara una diferencia porcentual de todos los valores para cumplir criterio de estacionariedad. Este dato es el POC (Point of Control) que es el nivel de precio que mayor volumen de negociacion registró en el dia. Como se verá en los analisis posteriores este dato es clave para hacer una comparacion con el cierre de cada intervalo y asi poder definir una conducta (compra o venta) para el siguiente intervalo y definir la rentabilidad del periodo.
 
